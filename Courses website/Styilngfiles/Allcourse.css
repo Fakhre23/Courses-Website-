@@ -1,0 +1,75 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+}
+
+/* Body styling */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Main container styling */
+.courses-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  padding: 20px;
+  margin: 0 auto; /* Center the container */
+  max-width: 800px; /* Maximum width for the courses list */
+  background-color: white; /* White background for the container */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Heading styling */
+h2 {
+  margin-bottom: 20px; /* Space below heading */
+}
+
+/* Course item styling */
+.course-item {
+  background-color: #f9f9f9; /* Light background for each course item */
+  border-radius: 5px; /* Rounded corners */
+  padding: 15px; /* Padding inside course item */
+  margin: 10px 0; /* Space between course items */
+  width: 100%; /* Full width for items */
+  transition: background-color 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Course item hover effect */
+.course-item:hover {
+  background-color: #eaeaea; /* Darker background on hover */
+}
+
+/* Footer styling */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  position: absolute;
+  padding: 10px 0;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Footer year styling */
+.footer h4 {
+  margin: 0; /* Remove default margin */
+  font-size: 14px; /* Font size */
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .courses-container {
+    width: 90%; /* Responsive width for smaller screens */
+  }
+
+  .footer h4 {
+    font-size: 12px; /* Smaller font on smaller screens */
+  }
+}

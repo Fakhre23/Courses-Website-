@@ -1,0 +1,98 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+}
+
+/* Body styling */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Main container styling */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 20px;
+    margin: 0 auto; /* Center the form container */
+    max-width: 500px; /* Maximum width for the form */
+    background-color: white; /* White background for the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Heading styling */
+h2 {
+    margin-bottom: 20px; /* Space below heading */
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    width: 100%; /* Full width */
+}
+
+/* Label styling */
+label {
+    margin: 10px 0 5px; /* Margin for labels */
+}
+
+/* Input and textarea styling */
+input[type="text"],
+input[type="date"],
+textarea {
+    padding: 10px; /* Padding inside input fields */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    width: 100%; /* Full width */
+    margin-bottom: 15px; /* Space below input fields */
+}
+
+/* Button styling */
+button {
+    padding: 10px; /* Button padding */
+    font-size: 16px; /* Button font size */
+    border: none; /* No border */
+    background-color: #333; /* Dark button background */
+    color: white; /* Button text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded button corners */
+    transition: background-color 0.3s; /* Smooth transition for button hover */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #555; /* Darker background on hover */
+}
+
+/* Footer styling */
+.footer {
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    text-align: center; /* Center the text */
+    padding: 10px 0; /* Padding for top and bottom */
+    width: 100%; /* Full width */
+      bottom: 0; /* Align to the bottom of the viewport */
+}
+
+/* Footer year styling */
+.footer h4 {
+    margin: 0; /* Remove default margin */
+    font-size: 14px; /* Font size */
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%; /* Responsive width for smaller screens */
+    }
+
+    .footer h4 {
+        font-size: 12px; /* Smaller font on smaller screens */
+    }
+}
